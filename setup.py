@@ -1,27 +1,3 @@
-from setuptools import find_packages,setup
-from typing import List
-
-HYPEN_E_DOT='-e .'
-def get_requirements(file_path:str)->List[str]:
-    '''
-    this function will return the list of requirements
-    '''
-    requirements=[]
-    with open(file_path) as file_obj:
-        requirements=file_obj.readlines()
-        requirements=[req.replace("\n","") for req in requirements]
-
-        if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)
-    
-    return requirements
-
-setup(
-name='mlproject',
-version='0.0.1',
-author='Anurag Raj',
-author_email='cloudanurag11@gmail.com',
-packages=find_packages(),
-install_requires=get_requirements('requirements.txt')
-
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:521b0c8cbe00c2801572cf5e6bc74fbff4ef0f562d24a76586dbabe8c0b69801
+size 701

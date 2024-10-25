@@ -1,17 +1,3 @@
-import logging
-import os
-from datetime import datetime
-
-LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
-logs_path=os.path.join(os.getcwd(),"logs",LOG_FILE)
-os.makedirs(logs_path,exist_ok=True)
-
-LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
-
-logging.basicConfig(
-    filename=LOG_FILE_PATH,
-    format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
-    level=logging.INFO,
-
-
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:faa246851bc6792b00ad9549cf5cfbd604a2afc220fb32f4a0a3789a6edd0f5d
+size 431
